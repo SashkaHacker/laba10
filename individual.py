@@ -6,10 +6,9 @@ if __name__ == "__main__":
     b = {'a', 'b', 'k', 'u'}
     c = {'o', 'p'}
     d = {'a', 'm', 'n', 'y', 'z'}
-    u = a | b | c | d
+    u = set("abcdefghijklmnopqrstuvwxyz")
     x = (a | b) & c
     print(x)
-    yy = (u.difference(a)) & (u.difference(b))
-    y = yy.difference(c | d)
+    y = (u.difference(a)) & (u.difference(b)).difference(c | d)
     print(x)
     print(y)
