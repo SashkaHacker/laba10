@@ -8,7 +8,6 @@ if __name__ == "__main__":
     d = {'a', 'm', 'n', 'y', 'z'}
     u = set("abcdefghijklmnopqrstuvwxyz")
     x = (a | b) & c
-    print(x)
     y = (u.difference(a)) & (u.difference(b)).difference(c | d)
     print(x)
     print(y)
